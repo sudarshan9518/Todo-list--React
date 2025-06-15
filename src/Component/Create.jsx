@@ -2,6 +2,7 @@ import React from "react";
 import { nanoid } from "nanoid";
 import { useState } from "react";
 import { Fragment } from "react";
+import { toast } from "react-toastify";
 const Create = (props) => {
   const todos = props.todos;
   const settodos = props.settodos;
@@ -22,6 +23,8 @@ const Create = (props) => {
     let copytodos = [...todos];
     copytodos.push(newtodo);
     settodos(copytodos);
+
+    toast.success("todo created")
 
     settitle("");
   };
