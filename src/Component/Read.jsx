@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Read.css"
 import { toast } from "react-toastify";
 
-const read = (props) => {
-  const todos = props.todos;
-  const settodos = props.settodos;
-  const check = props.check;
-  const setcheck = props.setcheck;
+import { todoContext } from "../Wrapper";
+const read = () => {
+
+
+    const[todos, settodos] = useContext(todoContext);
 
   const licss = {
     textTransform: "capitalize",
