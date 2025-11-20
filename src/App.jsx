@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Create from "./Component/Create";
-import Read from "./component/read";
+import Read from "./component/Read";
 
 
 const App = () => {
