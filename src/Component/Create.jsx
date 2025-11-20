@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { nanoid } from "nanoid"; 
 import { useState } from "react";
-import { Fragment } from "react";
 import { toast } from "react-toastify";
 import { todoContext } from "../Wrapper";
 const Create = () => {
